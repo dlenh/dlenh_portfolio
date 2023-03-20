@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Lenh</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-DL.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-DL.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__block">
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/dlenh-final.png" alt="Homepage">
+                    </a>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#services" class="smoothscroll">What I Do</a></li>
+                        <li><a href="#works" class="smoothscroll">My Work</a></li>
+                        <li><a href="#contact" class="smoothscroll">Get In Touch</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/davidlenh/">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                              </svg>                            
+                            <span class="screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dlenh">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                              </svg>                            
+                            <span class="screen-reader-text">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/dlenh425">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                              </svg>
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro 
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row">
+                <div class="column">
+                    <div class="s-intro__top-block">
+                        <span class="s-intro__bg"></span>
+
+                        <h1 class="s-intro__text">
+                            Changing the world <br>
+                            one line of code <br>
+                            at a time<span>.</span>
+                        </h1>
+
+                        <a href="#services" class="s-intro__scroll-down smoothscroll">
+                            <span>Scroll Down</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(180deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"><path d="M21 11L6.414 11 11.707 5.707 10.293 4.293 2.586 12 10.293 19.707 11.707 18.293 6.414 13 21 13z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-x-center s-intro__about-wrap">
+                <div class="column s-intro__about">
+                    <div id="profile">
+                        <img src="images/dlenh.jpg" alt="profilePic" id="profilePic">
+                    </div>
+                    <h2 class="s-intro__about-title">Hello! My name is David Lenh<span>.</span></h2>
+
+                    <p>
+                    I am a San Francisco based Full-Stack Software Engineer with a background
+                    in scientific research and education. While attending the University of California, San Diego 
+                    for a Masters in Biology, I was a teaching assistant (TA). After graduation, I continued the 
+                    education track and became a tutor. Throughout my years as a TA and tutor, I have used 
+                    software that often malfunctioned and was simply not up to par. It flustered me, my coworkers,
+                    and even my students. I felt like that was something I can improve on, and so I picked up learning
+                    code in my free time.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row clients-outer" data-animate-block>
+                <div class="column lg-12">
+
+                    <h3 class="text-clients-title" data-animate-el>
+                        Tools I'm currently using or learning
+                    </h3>
+
+                    <div class="swiper-container clients" data-animate-el>
+                        <div class="swiper-wrapper clients__content">
+                            <a href="https://www.javascript.com/" title="" class="swiper-slide clients__slide">
+                                <img src="https://icongr.am/devicon/javascript-plain.svg?size=128&color=f6f4f4" />
+                              </a>
+                            
+                            <a href="https://expressjs.com/" title="" class="swiper-slide clients__slide">
+                                <img src="https://icongr.am/devicon/express-original.svg?size=128&color=f6f4f4" />
+                              </a>
+                            <!-- <a href="#0" title="" class="swiper-slide clients__slide"><img src="https://icongr.am/devicon/react-original-wordmark.svg?size=128&color=f6f4f4" /></a> -->
+
+                            <a href="https://reactjs.org/" title="" class="swiper-slide clients__slide">
+                                <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /> -->
+                                <img src="images/icons/clients/react.svg" alt="">
+                              </a>
+                            <a href="https://www.mongodb.com/" title="" class="swiper-slide clients__slide">
+                                <img src="https://icongr.am/devicon/mongodb-plain-wordmark.svg?size=128&color=f6f4f4" />
+                            </a>  
+          
+                            <a href="https://nodejs.org/en/" title="" class="swiper-slide clients__slide">
+                                <img src="https://icongr.am/devicon/nodejs-plain.svg?size=128&color=f6f4f4" />
+                            </a>
+                            <a href="https://git-scm.com/" title="" class="swiper-slide clients__slide">
+                                <img src="https://icongr.am/devicon/git-plain-wordmark.svg?size=128&color=f6f4f4" />
+                              </a>
+                            <a href="https://github.com/" title="" class="swiper-slide clients__slide"><img src="images/icons/clients/github.svg" /></a>
+                            <a href="https://www.heroku.com/" title="" class="swiper-slide clients__slide"><img src="https://icongr.am/devicon/heroku-plain-wordmark.svg?size=128&color=f6f4f4" /></a>
+                            <a href="https://www.mysql.com/" title="" class="swiper-slide clients__slide"><img src="https://icongr.am/devicon/mysql-plain-wordmark.svg?size=128&color=f6f4f4" /></a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="" class="swiper-slide clients__slide">
+                                <img src="https://icongr.am/devicon/html5-plain-wordmark.svg?size=128&color=f6f4f4" />
+                              </a>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" title="" class="swiper-slide clients__slide">
+                                <img src="https://icongr.am/devicon/css3-plain-wordmark.svg?size=128&color=f6f4f4" />
+                              </a>
+                            
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
+                
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=30><span>30</span>+</div>
+                    <h5>Happy Customers</h5>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=35><span>35</span>+</div>
+                    <h5>Hours Work</h5>
+                    <p>
+                    Eleifend donec pretium vulputate sapien nec sagittis 
+                    aliquam malesuada. Eu scelerisque felis imperdiet proin 
+                    fermentum leo. Cursus turpis massa tincidunt.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=41><span>41</span>+</div>
+                    <h5>Coffee Drinks</h5>
+                    <p>
+                    Volutpat commodo sed egestas egestas fringilla phasellus 
+                    faucibus scelerisque. Est velit egestas dui id ornare. 
+                    Leo urna molestie at elementum.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" data-counter=38><span>38</span>+</div>
+                    <h5>Completed Projects</h5> 
+                    <p>
+                    Nulla pharetra diam sit amet nisl suscipit adipiscing 
+                    bibendum est. Quis risus sed vulputate odio ut. 
+                    Lectus arcu bibendum at varius vel eu facilisis.
+                    </p>
+                </div>
+    
+            </div>  -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # services
+        ================================================== -->
+        <section id="services" class="s-services target-section">
+
+            <div class="row section-header has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">What I Do</h3>
+                    <h1 class="text-display-title">
+                        Here to provide you with <br>
+                        a responsive and accessible <br>
+                        web presence. <br>
+                    </h1>
+                </div>
+            </div> <!-- end section-header -->
+    
+            <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--branding"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Consultation</h3>
+                        <p>It starts with a conversation going over your initial vision for the web presence you want to have.
+                        It can be building a website from the ground up, or updating an outdated presence for the mobile era. 
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--research"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Proposal</h3>
+                        <p>Based on our consultation, I will draft a detailed project proposal that includes a visual preview,
+                        estimated costs, and a projected timeline outlining the plan of action. 
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--frontend"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Development</h3>
+                        <p>Clients will receive regularly scheduled updates regarding their project status while I create and test it.
+                        Your feedback will be taken into consideration to bring your site to life.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Launch & Support</h3>
+                        <p>Once the site is finished and you are completely satisfied, we will launch your web presence.
+                        Maintenance fees may apply post-production to ensure smooth operation of your site.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--illustration"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">Illustration</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna. Lectus vestibulum 
+                        mattis ullamcorper velit sed ullamcorper morbi. Sit amet aliquam.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">E-Commerce</h3>
+                        <p>Nullam eget felis eget nunc. Adipiscing commodo elit at imperdiet dui accumsan. Condimentum 
+                        mattis pellentesque id nibh tortor id aliquet lectus proin. Orci eu lobortis elementum nibh 
+                        tellus. Tortor vitae purus faucibus ornare suspendisse.
+                        </p>
+                    </div>
+                </div> -->
+    
+            </div> <!-- end services-list -->
+
+        </section> <!-- end s-services -->
+
+
+        <!-- ## works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row section-header section-header--dark has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Recent Works</h3>
+                    <h1 class="text-display-title">Here are some of my projects<span>.</span> Feel free to check them out<span>.</span></h1>
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row folio-list block-lg-one-third block-tab-one-half block-stack-on-550 collapse" data-animate-block>
+
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-tulips.jpg" title="The Red Wheel" data-size="1050x700">
+                                <img src="images/portfolio/tulips.jpg" 
+                                     srcset="images/portfolio/tulips.jpg 1x, images/portfolio/tulips@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Personal Project</div>
+                            <h4 class="folio-item__title">Coming Soon</h4>
+                        </div>
+                        <a href="#" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <a href="#" title="View Code" class="folio-item__project-link2">View Code</a>
+                        <div class="folio-item__caption">
+                            <p>Personal project coming soon!</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-landingpage.png" Title="Client Landing Page" data-size="1050x700">
+                                <img src="images/portfolio/work/client-website.png" 
+                                     srcset="images/portfolio/work/client-website.png 1x, images/portfolio/work/client-website.png 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">HTML | CSS | Javascript</div>
+                            <h4 class="folio-item__title">Client Landing Page</h4>
+                        </div>
+                        <a href="https://samanthahongtutoring.netlify.app/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <a href="https://github.com/dlenh/sh-tutoring" title="View Code" class="folio-item__project-link2">View Code</a>
+
+                        <div class="folio-item__caption">
+                            <p>Landing page for client so that she can have web presence for her tutoring business.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-api.png" title="Fetch API App" data-size="1050x700">
+                                <img src="images/portfolio/work/nasa-api.png" 
+                                     srcset="images/portfolio/work/nasa-api.png 1x, images/portfolio/work/nasa-api.png 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">HTML | CSS | Javascript | API</div>
+                            <h4 class="folio-item__title">Fetch API App</h4>
+                        </div>
+                        <a href="https://sfstargazer.netlify.app/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <a href="https://github.com/dlenh/nasa-api" title="View Code" class="folio-item__project-link2">View Code</a>
+                        <div class="folio-item__caption">
+                            <p>Application that retrieves astronomy picture of the day from NASA's API.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <!-- <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-rucksack.jpg" title="Corrugated Sheets" data-size="1050x700">
+                                <img src="images/portfolio/rucksack.jpg" 
+                                     srcset="images/portfolio/rucksack.jpg 1x, images/portfolio/rucksack@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Frontend Design</div>
+                            <h4 class="folio-item__title">Rucksack</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> end column -->
+                <!-- <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="Sand Dunes" data-size="1050x700">
+                                <img src="images/portfolio/woodcraft.jpg" 
+                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">E-Commerce</div>
+                            <h4 class="folio-item__title">Wooocraft</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                            Project Link
+                        </a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> end column -->
+                <!-- <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="The Lamp" data-size="1050x700">
+                                <img src="images/portfolio/lamp.jpg" 
+                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Product Design</div>
+                            <h4 class="folio-item__title">The Lamp</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> end column -->
+                <!-- <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-grayscale.jpg" title="The Lamp" data-size="1050x700">
+                                <img src="images/portfolio/grayscale.jpg" 
+                                     srcset="images/portfolio/grayscale.jpg 1x, images/portfolio/grayscale@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Frontend Design</div>
+                            <h4 class="folio-item__title">Grayscale</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> end column -->
+                <!-- <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shutterbug.jpg" title="The Red Wheel" data-size="1050x700">
+                                <img src="images/portfolio/shutterbug.jpg" 
+                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Branding</div>
+                            <h4 class="folio-item__title">Lady Shutterbug</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> end column -->
+                <!-- <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-fuji.jpg" title="The Lamp" data-size="1050x700">
+                                <img src="images/portfolio/fuji.jpg" 
+                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Frontend Design</div>
+                            <h4 class="folio-item__title">Retro Cam</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">Project Link</a>
+                        <div class="folio-item__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> end column -->
+    
+            </div> <!-- folio-list -->
+
+            
+
+            <!-- <div class="video-block">
+                <span class="video-block__bg-left"></span>
+                <span class="video-block__bg-right"></span>
+
+                <div class="video-block__content">
+                    <a href="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+                    </a>
+
+                    <p class="video-caption">
+                        Watch Video
+                    </p>
+                </div>
+            </div>  -->
+            <!-- end video-block -->
+
+            <!-- <div class="row testimonials" data-animate-block>
+                <div class="column lg-12">
+    
+                    <div class="swiper-container testimonial-slider" data-animate-el>
+    
+                        <div class="swiper-wrapper">
+
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Tim Cook</strong>
+                                        <span>CEO, Apple</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                                Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
+                                Laudantium quia consequatur molestias.
+                                </p>
+                            </div> 
+            
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Sundar Pichai</strong>
+                                        <span>CEO, Google</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                                Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                                Quasi voluptas eius distinctio. Atque eos maxime.
+                                </p>
+                            </div> 
+            
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Satya Nadella</strong>
+                                        <span>CEO, Microsoft</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                                Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                                Voluptatem dignissimos ut.
+                                </p>
+                            </div> 
+    
+                            <div class="testimonial-slider__slide swiper-slide">
+                                <div class="testimonial-slider__author">
+                                    <img src="images/avatars/user-06.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                    <cite class="testimonial-slider__cite">
+                                        <strong>Jeff Bezos</strong>
+                                        <span>CEO, Amazon</span>
+                                    </cite>
+                                </div>
+                                <p>
+                                Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                                quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                                Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                                </p>
+                            </div> 
+        
+                        </div> 
+    
+                        <div class="swiper-pagination"></div>
+    
+                    </div> 
+    
+                </div> 
+            </div>  -->
+            
+
+        </section> <!-- end s-works -->
+
+
+        <!-- ## contact
+        ================================================== -->
+        <section id="contact" class="s-contact target-section">
+
+            <div class="row section-header section-header--dark"">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Get In Touch</h3>
+                    <h1 class="text-display-title">
+                        Do you have an idea or an epic project in mind? Let’s connect<span>.</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row row-x-center text-center s-contact__content">
+                <div class="column lg-12">
+                    <p class="lead">
+                    It is my privilege to collaborate with you. Whether that be creating a landing page to enhance your business's web presense,
+                    or bringing an exciting project idea to life. Talk to you soon!
+                    </p>
+                    <div class="btn-wrap">
+                        <a href="#0" class="btn btn--primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,4H4C2.897,4,2,4.897,2,6v12c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M20,6v0.511 l-8,6.223L4,6.512V6H20z M4,18V9.044l7.386,5.745C11.566,14.93,11.783,15,12,15s0.434-0.07,0.614-0.211L20,9.044L20.002,18H4z"></path></svg>
+                            Write An Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="s-footer">
+
+                <div class="row s-footer__top">
+                    <div class="column lg-5 md-8 stack-on-700 s-footer__block contact-address">
+                        <h4 class="h6">Where to Find Me</h4>
+        
+                        <p>
+                        San Francisco, California <br>
+                        United States <br>
+                        </p>
+                    </div>
+
+                    <div class="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
+                        <h4 class="h6">Follow Me</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="https://www.linkedin.com/in/davidlenh/">LinkedIn</a></li>
+                            <li><a href="https://github.com/dlenh">Github</a></li>
+                            <li><a href="https://twitter.com/dlenh425">Twitter</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="column lg-3 md-12 s-footer__block contact-number">
+                        <h4 class="h6">Contact Me</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="mailto:dlenh425@gmail.com">dlenh425@gmail.com</a></li>
+                            
+                        </ul>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+                <div class="row s-footer__bottom">
+                    <div class="column ss-copyright">
+                        <span>© Copyright David Lenh 2023</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
+
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <span class="ss-go-top__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(90deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
+                            </span>
+                            <span class="ss-go-top__text">Back to Top</span>
+                        </a>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+            </footer>
+
+        </section> <!-- end s-contact -->
+
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
