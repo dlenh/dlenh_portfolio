@@ -2802,6 +2802,10 @@ img.u-pull-left {
     margin-top                : 0;
 }
 
+.video-sample {
+    margin-top : 1rem;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * project-wide shared styles
